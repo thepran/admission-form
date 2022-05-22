@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gotham University||Admission 2022</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Admission 2022</h1>
+        <h2>University of Gotham</h2>
+        <p id="description" tabindex="1">Please fill the information below.</p>
+      </header>
+      <main class="form-section">
+        <form action="" id="survey-form">
+          <div class="form-container">
+            <fieldset class="form-container-fieldset">
+              <div class="form-row">
+                <label for="name" id="name-label">Name:</label>
+                <div class="form-field">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter Your Name"
+                    class="form-field-input"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="email" id="email-label">Email ID:</label>
+                <div class="form-field">
+                  <input
+                    type="email"
+                    name="input-email"
+                    id="email"
+                    required
+                    placeholder="Enter Your Email ID"
+                    class="form-field-input"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="number" id="number-label">Phone Number:</label>
+                <div class="form-field">
+                  <input
+                    type="number"
+                    name="input-phone"
+                    id="number"
+                    placeholder="Enter Your Phone Number"
+                    class="form-field-input"
+                    min="6000000000"
+                    max="9999999999"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="dropdown">Discipline:</label>
+                <div class="form-field">
+                  <select
+                    name="input-discipline"
+                    class="form-field-input"
+                    id="dropdown"
+                  >
+                    <option value="default">-Select Discipline-</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="humanities">Humanities</option>
+                    <option value="basic-science">Basic Science</option>
+                    <option value="computer-applications">
+                      Computer Applications
+                    </option>
+                    <option value="commerce">Commerce</option>
+                    <option value="law">Law</option>
+                    <option value="visual-arts">Visual Arts</option>
+                    <option value="performing-arts">Performing Arts</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <p>Are you currently studying in the university?</p>
+
+                <div class="form-field">
+                  <ul id="alumuni">
+                    <li class="list-radio">
+                      <label for="radio-yes">Yes</label>
+                      <input
+                        type="radio"
+                        name="form-field-alumuni-radio"
+                        id="radio-yes"
+                        value="yes"
+                      />
+                    </li>
+                    <li class="list-radio">
+                      <label for="radio-no">No</label>
+                      <input
+                        type="radio"
+                        name="form-field-alumuni-radio"
+                        id="radio-no"
+                        value="no"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-container-fieldset">
+              <div class="form-row textarea-field">
+                <label for="sop">
+                  Why you wanted to pursue selected course?
+                </label>
+                <div class="form-field">
+                  <textarea
+                    name="text-sop"
+                    id="sop"
+                    cols="50"
+                    rows="10"
+                    placeholder="Tell us why this course interest you.."
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-container-fieldset">
+              <div class="form-row">
+                <div class="form-field">
+                  <input
+                    type="checkbox"
+                    name="user-confirmation"
+                    id="user-confirmation"
+                    class="form-checkbox"
+                    value="user-confirmation"
+                    required
+                  />
+                  <label for="user-confirmation">
+                    I have filled all the information correctly.
+                  </label>
+                </div>
+                <div class="form-field">
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    id="terms"
+                    class="form-checkbox"
+                    value="terms"
+                    required
+                  />
+                  <label for="terms">
+                    I agree with the Terms and Conditions.
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" id="submit">Proceed</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
